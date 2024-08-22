@@ -1,0 +1,58 @@
+---
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout>
+	<h1>Specializations</h1>
+	<div id="grid"></div>
+</Layout>
+
+<script>
+	import { Grid } from "gridjs";
+	import "gridjs/dist/theme/mermaid.css";
+
+	const response = await fetch("specializations.json");
+	const gridData = await response.json();
+
+	new Grid({
+		columns: [
+			{
+				id: "name",
+				name: "Name",
+			},
+			{
+				id: "category",
+				name: "Category",
+			},
+			{
+				id: "identity",
+				name: "Identity",
+			},
+			{
+				id: "levels",
+				name: "Levels",
+				formatter: (cell: number[]) => cell.join(" "),
+				sort: {
+					compare: (a: number[], b: number[]) => {
+						const aMax = Math.max(...a);
+						const bMax = Math.max(...b);
+						return aMax - bMax;
+					},
+				},
+			},
+			{
+				id: "description",
+				name: "Description",
+			},
+		],
+		data: gridData,
+		sort: true,
+		search: true,
+	}).render(document.getElementById("grid")!);
+
+	setTimeout(() => {
+		(
+			document.querySelector('[data-column-id="levels"]') as HTMLElement
+		)?.click();
+	}, 50);
+</script>
