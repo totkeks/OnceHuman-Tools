@@ -4,7 +4,7 @@
 
 <script>
 	class CrateResetTimer extends HTMLElement {
-		#interval = 0;
+		#interval: ReturnType<typeof setTimeout> | undefined = undefined;
 		#resetTimeSpan: HTMLSpanElement | null = null;
 
 		constructor() {

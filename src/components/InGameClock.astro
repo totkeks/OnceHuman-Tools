@@ -4,7 +4,7 @@
 
 <script>
 	class InGameClock extends HTMLElement {
-		#interval = 0;
+		#interval: ReturnType<typeof setTimeout> | undefined = undefined;
 		#timeSpan: HTMLSpanElement | null = null;
 
 		constructor() {
