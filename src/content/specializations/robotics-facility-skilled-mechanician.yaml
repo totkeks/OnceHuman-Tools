@@ -1,0 +1,7 @@
+name: "Robotics Facility: Skilled Mechanician"
+category: Building
+identity: Artillery Marshal
+levels: [5, 10, 15]
+description: |
+  Facility Boost: Robotics Facility
+  Increase the Durability of Traps and Rifle Turret type facilities by 50%.

@@ -1,0 +1,7 @@
+name: "Explosive Throwables: Echo Blast"
+category: Crafting
+identity: Demolition Expert
+levels: [20, 25, 30, 35]
+description: |
+  Improved Formula: Explosive Throwables
+  Increase the DMG of High-Explosive Grenades, Shrapnel Grenades, Molotov Cocktails, and Thermite DMG by 30%. The first target killed will trigger 1 extra explosion, dealing damage equal to 400% Psi Intensity.

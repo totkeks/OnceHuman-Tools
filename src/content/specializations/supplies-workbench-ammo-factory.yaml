@@ -1,0 +1,7 @@
+name: "Supplies Workbench: Ammo Factory"
+category: Crafting
+identity: Master Craftsman
+levels: [5, 10, 15]
+description: |
+  Facility Boost: Supplies Workbench
+  Crafting Output +50% when crafting regular Ammunition.

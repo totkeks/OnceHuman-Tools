@@ -1,0 +1,7 @@
+name: "Pickaxe: Forest Foe"
+category: Gathering
+identity: Prospector
+levels: [5, 10, 15]
+description: |
+  Improved Formula: Pickaxe
+  Pickaxe Durability is doubled. Enjoy +30% yield when logging with the Pickaxe, ang gain 150% of the resources when you completely destroy a tree.

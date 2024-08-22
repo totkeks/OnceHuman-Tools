@@ -1,0 +1,7 @@
+name: "Pickaxe: Moonlight Mining"
+category: Gathering
+identity: Prospector
+levels: [5, 10, 15]
+description: |
+  Improved Formula: Pickaxe
+  When using the Pickaxe for Mining, increase the yield of Copper Ore, Tin Ore, Iron Ore, Aluminum Ore, and Tungsten by 25%. Effect doubles at night (21:00 - 6:00).

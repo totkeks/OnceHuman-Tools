@@ -1,0 +1,7 @@
+name: "Basic Defense: Battle-Hardened"
+category: Building
+identity: Artillery Marshal
+levels: [5, 10, 15]
+description: |
+  Facility Boost: Basic Defense
+  Sandbags, Shelters, and High Forticiations gain the Battle-Hardened effect, Durability +100%. When your Territory exits combat, Durability recovers to 100%.

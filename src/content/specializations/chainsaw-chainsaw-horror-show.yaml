@@ -1,0 +1,7 @@
+name: "Chainsaw: Chainsaw Horror Show"
+category: Gathering
+identity: Prospector
+levels: [20, 25, 30, 35]
+description: |
+  Improved Formula: Chainsaw
+  Chainsaw Durability cap +50%, Chainsaw Attack Speed +30%, and Chainsaw Melee DMG +100%.

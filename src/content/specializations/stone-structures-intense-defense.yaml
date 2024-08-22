@@ -1,0 +1,7 @@
+name: "Stone Structures: Intense Defense"
+category: Building
+identity: Tinkerer
+levels: [20, 25, 30, 35]
+description: |
+  Facility Boost: Stone Structures
+  Structures built from stone gain the Intense Defense effect, Durability +100%, and the maximum number of Structural items that can be placed in your Territory at any one time +100.

@@ -1,0 +1,7 @@
+name: "Disassembly Bench: Careful Disassembly"
+category: Smelter
+identity: Gathering
+levels: [5, 10, 15]
+description: |
+  Facility Boost: Disassembly Bench
+  Yield +30% when disassembling Parts, Fabrics and Plastic.

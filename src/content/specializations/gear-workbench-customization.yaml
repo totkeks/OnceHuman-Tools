@@ -1,0 +1,7 @@
+name: "Gear Workbench: Customization"
+category: Crafting
+identity: Master Craftsman
+levels: [5, 10, 15]
+description: |
+  Facility Boost: Gear Workbench
+  Weapons and Armor crafted using the Gear Workbench enjoy +30% Max Durability.

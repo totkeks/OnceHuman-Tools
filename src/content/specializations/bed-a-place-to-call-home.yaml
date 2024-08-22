@@ -1,0 +1,7 @@
+name: "Bed: A Place to Call Home"
+category: Building
+identity: Tinkerer
+levels: [5, 10, 15]
+description: |
+  Facility Boost: Bed
+  Sleep for more than 10s to cure all disease and reduce Stamina depletion for the next 10 minutes.

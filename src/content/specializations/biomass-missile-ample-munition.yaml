@@ -1,0 +1,7 @@
+name: "Biomass Missile: Ample Munition"
+category: Building
+identity: Artillery Marshal
+levels: [20, 25, 30, 35]
+description: |
+  Improved Formula: Biomass Missile
+  Plasma Missiles -80% Weight, and +2 Crafting Yield.

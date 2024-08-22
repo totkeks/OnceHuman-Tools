@@ -1,0 +1,7 @@
+name: Precious Metal Refining
+category: Management
+identity: Sparksmith
+levels: [20, 25, 30, 35]
+description: |
+  Facility Boost: Generator
+  Maximum Number of Generators +1, and +2W Power Output.

@@ -1,0 +1,7 @@
+name: Sulfur Chemistry
+category: Crafting
+identity: Demolition Expert
+levels: [20, 25, 30, 35]
+description: |
+  Unlock New Formula: Sulfur Chemist
+  Can use Sulfur and Energy Link at the Synthesis Bench to slowly produce Acid.

@@ -1,0 +1,8 @@
+name: Portable Fridge
+category: Management
+identity: Star Chef
+levels: [20, 25, 30, 35]
+description: |
+  Unlock New Formula: Portable Fridge
+  When in your Backpack, reduce the spoilage speed of Food in your Backpack by 70% - 90%.
+  Effect cannot stack.

@@ -1,0 +1,7 @@
+name: Stardust Water Pump
+category: Management
+identity: Hydro Engineer
+levels: [20, 25, 30, 35]
+description: |
+  Unlock New Facility: Stardust Water Pump
+  A special Water Pump that can extract Stardust Source from polluted soil when supplied with enough power.

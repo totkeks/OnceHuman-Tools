@@ -1,0 +1,7 @@
+name: "Canned Goods: Mini Canner"
+category: Management
+identity: Star Chef
+levels: [20, 25, 30, 35]
+description: |
+  Improved Formula: Canned Goods
+  +1 Yield when crafting Canned Goods.

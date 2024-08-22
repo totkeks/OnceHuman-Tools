@@ -1,0 +1,7 @@
+name: "Throwing Dagger: Bullseye"
+category: Crafting
+identity: Demolition Expert
+levels: [5, 10, 15]
+description: |
+  Improved Formula: Throwing Dagger
+  Throwing Dagger +30% DMG. After killing an enemy with a Throwing Dagger, the next throw +100% DMG.

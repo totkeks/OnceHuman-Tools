@@ -1,0 +1,7 @@
+name: Super Refinery
+category: Gathering
+identity: Smelter
+levels: [5, 10, 15]
+description: |
+  Unlock New Facility: Super Refinery
+  Transform Acid into Portable Mixed Fuel more efficiently.

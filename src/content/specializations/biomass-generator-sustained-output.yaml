@@ -1,0 +1,7 @@
+name: "Biomass Generator: Sustained Output"
+category: Management
+identity: Sparksmith
+levels: [20, 25, 30, 35]
+description: |
+  Facility Boost: Biomass Generator
+  Increase Biomass Generator's power output by 5W, and fuel duration by 150%.

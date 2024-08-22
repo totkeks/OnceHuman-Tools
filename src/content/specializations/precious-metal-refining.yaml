@@ -1,0 +1,7 @@
+name: Precious Metal Refining
+category: Gathering
+identity: Smelter
+levels: [20, 25, 30, 35]
+description: |
+  Unlock New Formula: Precious Metal Refining
+  Smelt Gold and Silver Ores into Ingots using the Electric Furnace. The Ingots can be sold for a large number of Energy Links.

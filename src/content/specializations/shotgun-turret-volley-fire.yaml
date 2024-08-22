@@ -1,0 +1,7 @@
+name: "Shotgun Turret: Volley Fire"
+category: Building
+identity: Artillery Marshal
+levels: [20, 25, 30, 35]
+description: |
+  Facility Boost: Shotgun Turret
+  Shotgun Turret gain DMG +30%, Power Consumption -30%, and have a 30% chance to trigger a Shrapnel effect upon hitting an enemy.

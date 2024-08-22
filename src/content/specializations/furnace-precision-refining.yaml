@@ -1,0 +1,7 @@
+name: "Furnace: Precision Refining"
+category: Gathering
+identity: Smelter
+levels: [5, 10, 15]
+description: |
+  Facility Boost: Furnace
+  Resource Consumption -30%, and Smelting Time -30% when smelting Copper, Bronze, Steel, Aluminum, and Tungsten Ingots using a Furnance or Electric Furnace.

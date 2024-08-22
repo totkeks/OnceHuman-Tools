@@ -1,0 +1,8 @@
+name: Compost Bin
+category: Management
+identity: Child of the Earth
+levels: [5, 10, 15]
+description: |
+  Unlock New Formula: Compost Bin
+  When in your Backpack, if there is Spoiled Food in your Backpack, 1-3 Spoiled Foods will be consumed every 10-5 minutes, and be turned into Mushroom or random Fertilizer.
+  Effect cannot stack.

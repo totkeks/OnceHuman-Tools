@@ -1,0 +1,7 @@
+name: "Disassembly Bench: Electronic Recycling"
+category: Crafting
+identity: Machinist
+levels: [5, 10, 15]
+description: |
+  Facility Boost: Disassembly Bench
+  Yield +50% for Metal Scraps and Electronic Parts.

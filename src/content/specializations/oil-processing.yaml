@@ -1,0 +1,7 @@
+name: Oil Processing
+category: Gathering
+identity: Smelter
+levels: [20, 25, 30, 35]
+description: |
+  Unlock New Formula: Oil Processing
+  Turn Stardust Ore and Portable Mixed Fuel into Stardust Source using the Electric Furnace.

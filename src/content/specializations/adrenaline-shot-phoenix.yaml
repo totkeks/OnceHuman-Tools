@@ -1,0 +1,7 @@
+name: "Adrenaline Shot: Phoenix"
+category: Crafting
+identity: Master Craftsman
+levels: [20, 25, 30, 35]
+description: |
+  Improved Formula: Adrenaline Shot
+  Take less DMG for the first 10s after respawning and slowly recover HP.

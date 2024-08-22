@@ -1,0 +1,7 @@
+name: "Furnace: Sintering"
+category: Building
+identity: Tinkerer
+levels: [20, 25, 30, 35]
+description: |
+  Facility Boost: Furnace
+  Sintered Brick and Glass Crafting Time -50%, Yield +100%.

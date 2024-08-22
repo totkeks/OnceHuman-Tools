@@ -1,0 +1,7 @@
+name: "Rifle Turret: Two Birds One Stone"
+category: Building
+identity: Artillery Marshal
+levels: [40, 45, 50]
+description: |
+  Facility Boost: Rifle Turret
+  Rifle Turrets DMG +30%, Durability +30%, and attacks on target trigger a Bounce effect.

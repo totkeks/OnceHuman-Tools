@@ -1,0 +1,7 @@
+name: "Gatling Cannon: Power Blast"
+category: Building
+identity: Artillery Marshal
+levels: [40, 45, 50]
+description: |
+  Facility Boost: Gatling Cannon
+  Gatling Cannons deal +30% DMG. When your Territory exits combat, Durability recovers to 100%.

@@ -1,0 +1,7 @@
+name: "Electric Furnace: Efficiency Lover"
+category: Gathering
+identity: Smelter
+levels: [20, 25, 30, 35]
+description: |
+  Facility Boost: Electric Furnace
+  Power Consumption -50%, and Crafting Time -60%.
