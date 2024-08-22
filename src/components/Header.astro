@@ -1,0 +1,37 @@
+---
+import InGameClock from "./InGameClock.astro";
+---
+
+<header>
+	<h1>
+		<a href="/">Once Human Tools</a>
+	</h1>
+
+	<nav>
+		<a href="/db/deviations">Deviations</a>
+		<a href="/db/specializations">Specializations</a>
+	</nav>
+
+	<InGameClock />
+</header>
+
+<style>
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+		background-color: #f0f0f0;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+		padding-right: 1em;
+	}
+
+	nav {
+		flex-grow: 1;
+		display: flex;
+		gap: 1rem;
+	}
+</style>

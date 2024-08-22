@@ -1,0 +1,48 @@
+---
+import CrateResetTimer from "./CrateResetTimer.astro";
+
+import childProcess from "child_process";
+
+const commitHash = childProcess
+	.execSync("git rev-parse HEAD")
+	.toString()
+	.trim();
+
+const buildDate = new Date();
+---
+
+<footer>
+	<CrateResetTimer />
+	<span
+		>last update <time datetime="{buildDate.toISOString()}"
+			>{
+				buildDate.toLocaleString([], {
+					dateStyle: "short",
+				})
+			}&nbsp;{
+				buildDate.toLocaleString([], {
+					hour12: false,
+					timeStyle: "short",
+				})
+			}</time
+		>
+	</span>
+	<div>
+		version
+		<a href={`https://github.com/totkeks/OnceHuman-Tools/commit/${commitHash}`}
+			>{commitHash.slice(0, 7)}</a
+		>
+	</div>
+</footer>
+
+<style>
+	footer {
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem;
+		background-color: #333;
+		color: white;
+		position: sticky;
+		bottom: 0;
+	}
+</style>
