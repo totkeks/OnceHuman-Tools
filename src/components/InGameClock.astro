@@ -1,0 +1,51 @@
+<in-game-clock>
+	<span>Loading...</span>
+</in-game-clock>
+
+<script>
+	class InGameClock extends HTMLElement {
+		#interval = 0;
+		#timeSpan: HTMLSpanElement | null = null;
+
+		constructor() {
+			super();
+		}
+
+		connectedCallback() {
+			this.#timeSpan = this.querySelector("span");
+			this.#updateTime();
+
+			const now = new Date();
+			const millisecondsUntilNextUpdate =
+				2500 - ((now.getSeconds() * 1000 + now.getMilliseconds()) % 2500);
+
+			setTimeout(() => {
+				this.#interval = setInterval(() => this.#updateTime(), 2500);
+				this.#updateTime();
+			}, millisecondsUntilNextUpdate);
+		}
+
+		disconnectedCallback() {
+			clearInterval(this.#interval);
+		}
+
+		#updateTime() {
+			const now = new Date();
+			const realLifeMinutes = now.getMinutes();
+			const realLifeSeconds = now.getSeconds();
+			const realLifeMilliseconds = now.getMilliseconds();
+
+			const totalRealLifeSeconds =
+				realLifeMinutes * 60 + realLifeSeconds + realLifeMilliseconds / 1000;
+			const inGameTotalMinutes = (totalRealLifeSeconds / 2.5) % 1440;
+			const inGameHours = Math.floor(inGameTotalMinutes / 60);
+			const inGameMins = Math.floor(inGameTotalMinutes % 60);
+
+			if (this.#timeSpan) {
+				this.#timeSpan.textContent = `${inGameHours < 10 ? "0" : ""}${inGameHours}:${inGameMins < 10 ? "0" : ""}${inGameMins}`;
+			}
+		}
+	}
+
+	customElements.define("in-game-clock", InGameClock);
+</script>

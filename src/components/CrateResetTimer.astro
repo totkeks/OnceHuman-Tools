@@ -1,0 +1,73 @@
+<crate-reset-timer>
+	<span>Calculating...</span>
+</crate-reset-timer>
+
+<script>
+	class CrateResetTimer extends HTMLElement {
+		#interval = 0;
+		#resetTimeSpan: HTMLSpanElement | null = null;
+
+		constructor() {
+			super();
+		}
+
+		connectedCallback() {
+			this.#resetTimeSpan = this.querySelector("span");
+			this.#updateTime();
+
+			const now = new Date();
+			const millisecondsUntilNextMinute =
+				(60 - now.getSeconds()) * 1000 - now.getMilliseconds();
+
+			setTimeout(() => {
+				this.#interval = setInterval(() => this.#updateTime(), 60000);
+				this.#updateTime();
+			}, millisecondsUntilNextMinute);
+		}
+
+		disconnectedCallback() {
+			clearInterval(this.#interval);
+		}
+
+		#getNextResetTime(): Date {
+			const now = new Date();
+			const utcHours = now.getUTCHours();
+			const utcMinutes = now.getUTCMinutes();
+
+			// Resets every four hours starting at 00:00 UTC
+			const nextResetHour = (Math.floor(utcHours / 4) * 4 + 4) % 24;
+			const nextReset = new Date(now);
+			nextReset.setUTCHours(nextResetHour, 0, 0, 0);
+
+			if (nextResetHour <= utcHours && utcMinutes > 0) {
+				nextReset.setUTCDate(now.getUTCDate() + 1);
+			}
+
+			return nextReset;
+		}
+
+		#updateTime() {
+			const now = new Date();
+			const nextReset = this.#getNextResetTime();
+
+			const diffMs = nextReset.getTime() - now.getTime();
+			const diffDate = new Date(diffMs);
+			let diffHrs = diffDate.getUTCHours();
+			let diffMins = diffDate.getUTCMinutes();
+
+			if (diffDate.getUTCSeconds() > 0) {
+				diffMins += 1;
+				if (diffMins === 60) {
+					diffMins = 0;
+					diffHrs += 1;
+				}
+			}
+
+			if (this.#resetTimeSpan) {
+				this.#resetTimeSpan.textContent = `${diffHrs}:${diffMins < 10 ? "0" : ""}${diffMins} until crate reset`;
+			}
+		}
+	}
+
+	customElements.define("crate-reset-timer", CrateResetTimer);
+</script>
